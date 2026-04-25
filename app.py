@@ -115,8 +115,9 @@ def delete_all_tasks():
     return jsonify({'message': 'All tasks deleted!'})
 
 # ========== START THE SERVER ==========
+init_database()
 if __name__ == '__main__':
-    init_database()
+    
     print("\n" + "="*50)
     print("🚀 Server is running!")
     print("📍 URL: http://localhost:10000")
